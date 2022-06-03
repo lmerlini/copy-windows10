@@ -1,0 +1,129 @@
+.desktop {
+    position: absolute;
+    width: 80px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.desktop:hover {
+    outline: 1px solid #0909ed;
+    background: var(--overlay-deskop);
+    transform: scale(1.05);
+
+}
+
+.desktop-logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.desktop-description {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.575rem;
+    line-height: 1.01;
+    word-wrap: break-word;
+}
+
+
+/* menu iniciar */
+.off {
+    height: 0;
+    width: 0;
+}
+
+
+
+.active-menu-inicial {
+    font-size: 2rem;
+    position: absolute;
+    height: var(--height-menu);
+    width: var(--width-menu);
+    background: #1c1c1cab;
+
+    bottom: calc(var(--bar-height) - 2px);
+    border-radius: 0px 8px;
+}
+
+.text{
+    display: none;
+}
+
+
+/* ./ menu iniciar */
+
+/* footer */
+.nav-bar {
+    position: absolute;
+    width: 100%;
+    height: var(--bar-height);
+    background: #1c1c1c;
+    bottom: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column: auto;
+    justify-content: space-between;
+    height: var(--bar-height);
+    gap: 20px;
+    align-items: center;
+}
+
+.row-left {
+    display: flex;
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+.row-right {
+    font-size: 1.5rem;
+    display: grid;
+    align-content: center;
+    height: var(--bar-height);
+
+    padding: 0px 20px;
+    text-align: end;
+}
+
+.col {
+    padding: 0px 20px;
+    height: var(--bar-height);
+    display: grid;
+    align-items: center;
+}
+
+.hora:hover {
+    cursor: pointer;
+    color: var(--color-icons);
+}
+
+.icon-hover:hover {
+    color: var(--color-icons);
+    background: var(--overlay-icons);
+}
+
+
+@media (max-width: 530px) {
+    .row-left {
+        align-content: space-around;
+        justify-content: space-between;
+        padding: 0 25px;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .row-right {
+        display: none;
+    }
+
+}
+
+
+/* ./ footer */

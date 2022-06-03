@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudando CSS - Luis Merlini</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main class="window" id="window">
+      <div class="desktop">
+        <img
+          class="desktop-logo"
+          src="img/this_pc.png"
+          alt="Meu Computador"
+          title="Meu Computador"
+        />
+        <p class="desktop-description">Meu Computador</p>
+      </div>
+
+      <section class="off" data-toggle="toggleMenu">
+        <div data-toggle="active" class="text">
+          show informations about my menu
+        </div>
+      </section>
+
+      <footer class="nav-bar">
+        <div class="row">
+          <div class="row-left">
+            <div class="col icon-hover" data-show="menu" title="Menu Iniciar">
+              <i class="fa fa-windows fa-2x"></i>
+            </div>
+            <div class="col icon-hover" data-show="search" title="Pesquisar">
+              <i class="fa fa-search fa-2x"></i>
+            </div>
+            <div class="col icon-hover" data-show="email" title="E-mail">
+              <i class="fa fa-envelope fa-2x"></i>
+            </div>
+            <div
+              class="col icon-hover"
+              data-show="chrome"
+              title="Google Chrome"
+            >
+              <i class="fa fa-chrome fa-2x"></i>
+            </div>
+          </div>
+          <div class="row-right">
+            <div class="hora">
+              <span id="history"></span><br />
+              <span id="time"></span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
